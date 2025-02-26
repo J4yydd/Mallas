@@ -1,0 +1,372 @@
+
+:root {  /*sirve para hacer nuestras propias variables */
+    --blanco : #ffffff;
+    --oscuro: #212121;
+    --primario: #ff0707;
+    --secundario: #0097A7;
+    --gris: #757575;
+
+
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after{   /* esto es para que no se afecte el padding */
+    box-sizing: inherit;
+
+}
+body {                           /*  las dos primeras opciones de arrba es para usar los rems 
+    y que el codigo se adapte mejor a cualquier ordenador*/
+    font-size: 16px;
+    font-family: "Krub", serif;/*si lo colocamos en el body ira en todos los elementos*/
+   
+   
+}
+
+.titulo{   /*no es recomendado usar id*/ 
+    text-align:center;
+    font-size: 1.9rem;
+    color: var(--blanco); /* esta es la manera de poner nuestras variables*/
+    font-family: "Krub", serif;/* agregar tipos de letras*/
+    background-color: var(--primario);
+    
+    max-width: 1000rem; /* esto es para definir el ancho max que se ucupara*/
+    margin-top:0;  /* lo que hace esto es poder dar separacion de margen*/
+    margin-right: auto;/* esto hace qie que sea su posicon automatica y como ambos lados quedan auto, queda centrado*/
+    margin-bottom: 0; /* esto lo que hace es darle saparacion hacia abajo*/
+   
+  
+}
+.titulo{
+
+    font-size : 5rem;
+ 
+}
+.titulo span{
+    font-size :1rem; 
+    
+}
+.tituloServicios{
+    text-align:center;
+    font-size: 1.9rem;
+    color: var(--blanco); /* esta es la manera de poner nuestras variables*/
+    font-family: "Krub", serif;/* agregar tipos de letras*/
+    background-color: var(--oscuro);
+    
+    max-width: 1000rem; /* esto es para definir el ancho max que se ucupara*/
+    margin-top:0;  /* lo que hace esto es poder dar separacion de margen*/
+    margin-right: auto;/* esto hace qie que sea su posicon automatica y como ambos lados quedan auto, queda centrado*/
+    margin-bottom: 0; /* esto lo que hace es darle saparacion hacia abajo*/
+    
+    font-size : 5rem;
+   
+
+
+}
+
+
+.subtitulo{   /*no es recomendado usar id*/ 
+    text-align:center;
+    font-size: 3.9rem;
+    color: var(--blanco); /* esta es la manera de poner nuestras variables*/
+    font-family: "Krub", serif;/* agregar tipos de letras*/
+    
+  
+}
+.nav-main {
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+}
+
+.nav-main a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 2.5rem;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.nav-main a:hover {
+    background-color: var(--primario);
+    color: var(--blanco);
+    transform: scale(1.1);
+}
+
+.nav-main a.active {
+    background-color: var(--primario); /* Cambia el color de fondo cuando está activa */
+    color: var(--blanco);
+    transform: scale(1.1); /* Mantiene el efecto de escala */
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg {
+    background-color: var(--gris);
+}
+
+@media(min-width: 480px) {
+    body{
+        background-color: var(--blanco);
+        
+    }
+    
+}
+@media (min-width: 480px) {
+    h1 {
+
+    } 
+    
+}
+@media (min-width:748px ) { 
+    .nav-main{
+        flex-direction: row;
+        
+       
+    
+        
+        justify-content:space-between;
+    }
+    
+}
+.hero{
+    background-image: url(../img/hero.jpg);/* esto es para poder importar la imagen desde css*/
+    background-size: cover; /* esto es para que cubra todo el espacio de la pagina*/
+    padding: 100px; /* Agrega un espacio interno de 20 píxeles alrededor del contenido del elemento */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    height: 800px; /* Establece la altura del elemento en 450 píxeles */
+   position: relative; /* esto es necesario para poder tener una posicion absoluta en el contendo hero*/
+}
+.contenido-hero{
+
+    position: absolute;
+     background-color: rgba(0,0,0,.5 );/* esto espara poder darle oscuridad a la imagen*/
+    bottom: 0;
+    left: 0;
+    top:0;
+    
+    right: 0;
+   
+  
+
+
+}
+.superpuesta {
+    position: absolute;
+    top: 50%;   /* Ajusta la posición vertical */
+    left: 50%;  /* Ajusta la posición horizontal */
+    transform: translate(-50%, -50%); /* Centra la imagen */
+    width: 400px; /* Ajusta el tamaño de la imagen superpuesta */
+}
+
+
+    
+
+.map{
+   
+    
+}
+.servicios{
+    margin: 0 auto 0 2rem;
+}
+
+
+
+.contenedorrr {
+    position: relative;
+    display: inline-block;
+    width: 90vw; /* Usa 90% del ancho de la pantalla */
+    max-width: 1000px; /* Máximo de 1000px */
+    top: -20%;
+    left: 0%;
+    transform: translate(0%, 20%);
+    padding: 0px;
+    overflow: hidden;
+}
+
+/* Estilos para la clase .imagen */
+.imagen {
+    /* Establece el ancho de la imagen al 100% de su contenedor */
+    width: 100%;
+    
+    /* Mantiene la proporción de la imagen ajustando la altura automáticamente */
+    height: 500px;
+    
+    /* Hace que la imagen se comporte como un bloque, evitando espacios en línea no deseados */
+    display: block;
+    
+    /* Aplica una transición suave al transformar la imagen */
+    transition: transform 0.3s ease;
+}
+
+
+.contenedorrr::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 1s ease;
+}
+
+.texto1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3vw; /* Se adapta al tamaño de la pantalla */
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.contenedorrr:hover .imagen {
+    transform: scale(1.05);
+}
+
+.contenedorrr:hover::after {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.contenedorrr:hover .texto1 {
+    opacity: 1;
+}
+
+/* Carrusel */
+/* Estilos para el carrusel */
+.carousel {
+    /* Posiciona el carrusel relativamente para que los elementos internos puedan posicionarse dentro de él */
+    position: relative;
+
+    /* Define un ancho fijo de 1500px, pero con una restricción máxima de 1000px */
+    width: 1500px;
+    max-width: 1000px;
+    
+    /* La altura se ajustará automáticamente en función del contenido */
+    height: auto;
+    
+    /* Oculta cualquier contenido que se desborde del contenedor */
+    overflow: hidden;
+    /* Aplica esquinas redondeadas de 10px */
+    
+    border-radius: 10px;
+
+    /* Agrega una sombra sutil para mejorar el aspecto visual */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor interno del carrusel */
+.carousel-container {
+    /* Usa flexbox para alinear los elementos en fila */
+    display: flex;
+
+    /* Ocupa el 100% del ancho y la altura del carrusel */
+    width: 100%;
+    height: 100%;
+
+    /* Aplica una transición suave al mover el carrusel */
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Elementos individuales dentro del carrusel */
+.carousel-item {
+    /* Define el ancho de cada elemento al 200% del contenedor (posible error si se usa con varios elementos) */
+    width: 200%;
+
+    /* Ajusta la altura automáticamente */
+    height: auto;
+
+    /* Escala la imagen o contenido para que cubra el área sin distorsionarse */
+    object-fit: cover;
+}
+
+
+.nav-btn {
+ /* Posiciona el elemento de manera absoluta respecto a su contenedor más cercano con posición relativa */
+ position: absolute;
+
+ /* Lo centra verticalmente en su contenedor */
+ top: 50%;
+ 
+ /* Ajusta su posición exacta trasladándolo hacia arriba un 50% de su propia altura */
+ transform: translateY(-10%);
+
+ /* Aplica un fondo semitransparente negro (30% de opacidad) */
+ background: rgba(0, 0, 0, 0.3);
+
+ /* Establece el color del texto en blanco */
+ color: #fff;
+
+ /* Elimina los bordes predeterminados */
+ border: none;
+
+ /* Añade un relleno interno de 15 píxeles */
+ padding: 15px;
+
+ /* Cambia el cursor a una mano al pasar el ratón sobre el elemento */
+ cursor: pointer;
+
+ /* Define el tamaño de la fuente en 40 píxeles */
+ font-size: 40px;
+
+ /* Redondea el elemento completamente para que parezca un círculo */
+ border-radius: 100%;
+
+ /* Aplica transiciones suaves al cambiar el fondo y la transformación */
+ transition: background 0.9s ease, transform 0.5s ease;
+
+ /* Agrega una sombra sutil para darle efecto de elevación */
+ box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+
+ /* Asegura que el elemento esté por encima de otros elementos en la página */
+ z-index: 1;
+}
+
+.nav-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .texto1 {
+        font-size: 4vw; /* Más grande para móviles */
+    }
+
+    .nav-btn {
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    #prev, #next {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .mapa{
+     
+        
+
+    }
+}
