@@ -256,7 +256,7 @@ body {                           /*  las dos primeras opciones de arrba es para 
 
 /* Asegura que la imagen nunca sea más ancha que su contenedor */
 img {
-    max-width: 100%;
+    width: 1500px; /* O el tamaño que necesites */
     height: auto; /* Mantiene la proporción */
     display: block; /* Evita espacio extra debajo de la imagen */
     margin: auto; /* Centra la imagen si es más pequeña que el contenedor */
@@ -264,7 +264,7 @@ img {
 
 /* Opcional: Estilo para que el contenedor tenga un margen */
 .image-container {
-    max-width: 1200px; /* Ajusta el tamaño máximo del contenedor */
+    max-width: 1600px; /* Ajusta el tamaño máximo del contenedor */
     margin: 20px auto; /* Centra el contenedor */
     padding: 10px;
     text-align: center;
