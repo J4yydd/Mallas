@@ -211,21 +211,22 @@ body {                           /*  las dos primeras opciones de arrba es para 
 
 .imagenReja1{
     position: absolute;
-    top: 53%;   /* Ajusta la posición vertical */
-    left: 0%;  /* Ajusta la posición horizontal */
-    transform: translate(-50%, -50%); /* Centra la imagen */
-    width: 100px; /* Ajusta el tamaño de la imagen superpuesta */
-   
-height: auto; /* Mantiene las proporciones */
-
-
+    top: 53%;
+    left: 50%;  /* Centra horizontalmente */
+    transform: translate(-50%, -50%); 
+    width: 100px; /* Tamaño base */
+    max-width: 90%; /* Evita que sea más grande que la pantalla */
+    height: auto;
 
 
 }
 /* Ajustes para pantallas más pequeñas */
 @media (max-width: 768px) { 
     .imagenReja1 {
-        width: 80px; /* Reduce el tamaño en tablets */
+        width: 60px;
+        max-width: 80%; /* Evita que la imagen desborde */
+        left: 50%; /* Asegura que siga centrada */
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -247,3 +248,20 @@ height: auto; /* Mantiene las proporciones */
     margin-right: auto;/* esto hace qie que sea su posicon automatica y como ambos lados quedan auto, queda centrado*/
     margin-bottom: 0; /* esto lo que hace es darle saparacion hacia abajo*/
 }
+
+/* Asegura que la imagen nunca sea más ancha que su contenedor */
+img {
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Evita espacio extra debajo de la imagen */
+    margin: auto; /* Centra la imagen si es más pequeña que el contenedor */
+}
+
+/* Opcional: Estilo para que el contenedor tenga un margen */
+.image-container {
+    max-width: 1200px; /* Ajusta el tamaño máximo del contenedor */
+    margin: 20px auto; /* Centra el contenedor */
+    padding: 10px;
+    text-align: center;
+}
+
