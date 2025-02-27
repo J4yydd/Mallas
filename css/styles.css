@@ -1,4 +1,3 @@
-
 :root {  /*sirve para hacer nuestras propias variables */
     --blanco : #ffffff;
     --oscuro: #212121;
@@ -18,7 +17,7 @@ html{
     font-size: 62.5%;
     box-sizing: border-box;
 }
-*, *:before, *:after{   /* esto es para que no se afecte el padding */
+ *:before, *:after{   /* esto es para que no se afecte el padding */
     box-sizing: inherit;
 
 }
@@ -72,7 +71,7 @@ body {                           /*  las dos primeras opciones de arrba es para 
 }
 
 
-.subtitulo{   /*no es recomendado usar id*/ 
+.subtitulo{   /* no es recomendado usar id */ 
     text-align:center;
     font-size: 3.9rem;
     color: var(--blanco); /* esta es la manera de poner nuestras variables*/
@@ -256,7 +255,7 @@ body {                           /*  las dos primeras opciones de arrba es para 
 
 /* Asegura que la imagen nunca sea más ancha que su contenedor */
 img {
-    width: 1500px; /* O el tamaño que necesites */
+    max-width: 100%;
     height: auto; /* Mantiene la proporción */
     display: block; /* Evita espacio extra debajo de la imagen */
     margin: auto; /* Centra la imagen si es más pequeña que el contenedor */
@@ -264,9 +263,8 @@ img {
 
 /* Opcional: Estilo para que el contenedor tenga un margen */
 .image-container {
-    max-width: 1600px; /* Ajusta el tamaño máximo del contenedor */
+    max-width: 1000rem; /* Ajusta el tamaño máximo del contenedor */
     margin: 20px auto; /* Centra el contenedor */
     padding: 10px;
     text-align: center;
 }
-
