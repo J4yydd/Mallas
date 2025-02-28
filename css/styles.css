@@ -74,6 +74,7 @@ body {                           /*  las dos primeras opciones de arrba es para 
 .subtitulo{   /* no es recomendado usar id */ 
     text-align:center;
     font-size: 3.9rem;
+    padding: 50px;
     color: var(--blanco); /* esta es la manera de poner nuestras variables*/
     font-family: "Krub", serif;/* agregar tipos de letras*/
     
@@ -174,7 +175,11 @@ body {                           /*  las dos primeras opciones de arrba es para 
 
     
 
-.map{
+.mapa{
+    display: flex;
+  justify-content: center;   /* se puede usar para centrar items o lo q sea  */
+  align-items: center;
+
    
     
 }
