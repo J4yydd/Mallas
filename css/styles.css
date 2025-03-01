@@ -348,7 +348,7 @@ img{
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-    background-color: #0097A7;
+    background-color: #757575;
     
     
 }
@@ -365,15 +365,15 @@ img{
 
 @media (max-width: 600px) {
     .swiper {
-        height: 24vh;
-        width: 42vh;
+        height: 25vh;
+        width: 45vh;
         max-height: 400px;
         
     }
 }
 .carrouselBack{
-    background-color: #0097A7;
-    padding: 30px;
+    background-color: #757575;
+    padding: 0px;
 }
 /* Estilo general para los botones de navegación (next y prev) */
 .swiper-button-next, .swiper-button-prev {
