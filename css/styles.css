@@ -362,7 +362,7 @@ img{
 /* Estilo de los botones al pasar el cursor sobre ellos (hover) */
 .swiper-button-next:hover, .swiper-button-prev:hover {
     background: rgba(255, 255, 255, 0.9); /* Fondo más brillante al pasar el cursor, el botón se ilumina ligeramente */
-    transform: scale(3.1); /* Aumenta ligeramente el tamaño del botón para dar un efecto de aumento cuando se pasa el cursor */
+    transform: scale(1.5); /* Aumenta ligeramente el tamaño del botón para dar un efecto de aumento cuando se pasa el cursor */
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Aumenta la sombra ligeramente para hacerlo más prominente */
     opacity: 0.9; /* Reduce un poco la opacidad para crear un efecto sutil de activación */
 }
