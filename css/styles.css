@@ -264,12 +264,25 @@ body {                           /*  las dos primeras opciones de arrba es para 
     margin-bottom: 0; /* esto lo que hace es darle saparacion hacia abajo*/
 }
 .DescripcionRejas2{
-    padding: 10px;
+    padding: 11px;
     text-align:center;
-    font-size: 1.9rem;
+    font-size: 2rem;
     color: var(--blanco); /* esta es la manera de poner nuestras variables*/
     font-family: "Krub", serif;/* agregar tipos de letras*/
     background-color: var(--primario);
+    
+    max-width: 1000rem; /* esto es para definir el ancho max que se ucupara*/
+    margin-top:0;  /* lo que hace esto es poder dar separacion de margen*/
+    margin-right: auto;/* esto hace qie que sea su posicon automatica y como ambos lados quedan auto, queda centrado*/
+    margin-bottom: 0; /* esto lo que hace es darle saparacion hacia abajo*/
+}
+.DescripcionRejas3{
+    padding: 11px;
+    text-align:left;
+    font-size: 2rem;
+    color: var(--blanco); /* esta es la manera de poner nuestras variables*/
+    font-family: "Krub", serif;/* agregar tipos de letras*/
+    background-color: var(--gris);
     
     max-width: 1000rem; /* esto es para definir el ancho max que se ucupara*/
     margin-top:0;  /* lo que hace esto es poder dar separacion de margen*/
@@ -302,9 +315,10 @@ img {
 /* Opcional: Estilo para que el contenedor tenga un margen */
 .image-container {
     max-width: 1000rem; /* Ajusta el tamaño máximo del contenedor */
-    margin: 20px auto; /* Centra el contenedor */
-    padding: 10px;
+    margin: 2px auto; /* darle espacio con otras cosas */
+    padding:10px;
     text-align: center;
+    background-color: var(--oscuro);
 }
 
 .container { 
