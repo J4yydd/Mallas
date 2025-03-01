@@ -1,0 +1,108 @@
+<!DOCTYPE html>  <!-- eso es la versiion en la que se esta-->
+<html lang="en"> <!-- -->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="UTF-8"> <!-- aplica un encodingespecial-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- esto es as informacion del mavegador, como que temaños tendra-->
+    <title>Rejas</title> <!-- es el nombre que tendra tu pagina web-->
+    <link rel ="preload" href="css/normalize.css" as ="style">
+    <link rel = "stylesheet" href ="css/normalize.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel ="preloaad" href="css/styles.css" as ="style"> <!-- esto es para tener un mejor performance en la pagina, 
+    se recomienda-->
+    <link href ="css/styles.css" rel =" stylesheet"> <!-- el link es para enlazar la carpeta correcta
+    para el css, y lo que es el reel stylesheet es para ya indicarle la conexion con los estilos-->
+
+</head>
+<body>
+
+
+<header>
+    <h1 class  = "tituloServicios">TEXTO PENDIENTE 
+       </h1>  <!-- este es el renglon mas importante de la pagina, ya que contiene el h1-->
+           </header>
+           
+           <div class="nav-bg">
+            <nav class="nav-main contenedor"> 
+                <a href ="index.html">↩ Inicio </a> <!-- esta sintaxis es para poder tener enlaces-->
+             <!-- esta sintaxis es para poder tener enlaces-->
+                <a href ="Servicios.html">Otros Servicios</a> <!-- esta sintaxis es para poder tener enlaces-->
+                <a href ="GaleriaRejas.html">Galeria de Rejas</a>
+                <a href="RejasAcero.html">Volver     ↩</a> <!-- sesta sintaxis es para poder tener enlaces-->
+                <!-- lo que esta entre comillas es lo que se va a llebar al enlace, 
+                 ya sea imagenes o otra pagina con el nombre del archivo en codigo-->
+                
+    
+                
+               <!-- division de navegaciones ..--> 
+          
+            </nav>
+       
+             </div>
+            <div class="DescripcionRejas">
+                <h1 >-- DISTRIBUIDOR AUTORIZADO DE REJA DE ACERO --</h1>
+            </div>
+            <div class="separador">
+                <h5></h5>
+            </div>
+
+            <div class="DescripcionRejas2">
+                <h2> Reja de acero es el resultado de un intenso trabajo de desarrollo de ingenieria de punta, para lograr 
+                    un sistema de cercos que satisface las actuales demandas de seguridad, estetica y funcionalidad.
+                </h3>
+            </div>
+          
+
+
+            <div class="image-container">
+                <img src="./img/pruebaa.jpg"  alt="Imagen adaptable">
+             
+            </div>
+
+
+       
+         
+              
+
+
+</div>
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      
+        <div class="swiper-slide"><img src="" alt="Imagen 1"></div>
+        <div class="swiper-slide"><img src="./img/logoMain.jpg" alt="Imagen 1"></div>
+        <div class="swiper-slide"><img src="./img/reja1.jpg" alt="Imagen 1"></div>
+        <div class="swiper-slide"><img src="https://source.unsplash.com/random/800x400?sig=2" alt="Imagen 2"></div>
+        <div class="swiper-slide"><img src="https://source.unsplash.com/random/800x400?sig=3" alt="Imagen 3"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+ 
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+
+<script src="nevegacionEstatica.js" defer></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+
+    
+</body>
+</html>
