@@ -549,4 +549,6 @@ body {                           /*  las dos primeras opciones de arrba es para 
 
 
 
-
+<div class="image-container">
+    <img src="./img/pruebaa.jpg" alt="Imagen adaptable">
+</div>
