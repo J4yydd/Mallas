@@ -105,8 +105,9 @@ body {                           /*  las dos primeras opciones de arrba es para 
 
 .nav-main a.active {
     background-color: var(--primario); /* Cambia el color de fondo cuando está activa */
-    color: var(--blanco);
+   
     transform: scale(1.1); /* Mantiene el efecto de escala */
+    font-weight: bold;
 }
 
 .contenedor {
@@ -207,6 +208,10 @@ body {                           /*  las dos primeras opciones de arrba es para 
 
 .nav-btn:hover {
     background: rgba(0, 0, 0, 0.7);
+}
+.nav-main a.active {
+    background-color: orange; /* Color cuando está seleccionada */
+    font-weight: bold;
 }
 
 /* Ajustar los botones para que no sean demasiado grandes en móviles */

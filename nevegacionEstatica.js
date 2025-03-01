@@ -1,13 +1,15 @@
-// Obtener todos los enlaces de la barra de navegación
-const navLinks = document.querySelectorAll('.estatic a');
+document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll(".nav-main a");
+    const currentUrl = window.location.pathname.split("/").pop(); // Obtiene el archivo actual
 
-// Añadir un evento de clic a cada enlace
-navLinks.forEach(link => {
-    link.addEventListener('click', function() {
-        // Eliminar la clase "active" de todos los enlaces
-        navLinks.forEach(link => link.classList.remove('active'));
-        
-        // Añadir la clase "active" al enlace clickeado
-        link.classList.add('active');
+    console.log("URL actual:", currentUrl); // Para verificar qué URL está detectando
+
+    links.forEach(link => {
+        console.log("Revisando:", link.getAttribute("href")); // Para ver los enlaces en la consola
+
+        if (link.getAttribute("href") === currentUrl) {
+            link.classList.add("active"); // Añade la clase si coincide con la URL
+            console.log("Sección activa:", link.textContent);
+        }
     });
 });
