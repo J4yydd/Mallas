@@ -365,8 +365,8 @@ img{
 
 @media (max-width: 600px) {
     .swiper {
-        height: 25vh;
-        width: 45vh;
+        height: 29vh;
+        width: 49vh;
         max-height: 400px;
         
     }
