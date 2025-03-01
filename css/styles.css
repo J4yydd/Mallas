@@ -349,7 +349,7 @@ img{
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
     background-color: #757575;
-    
+   
     
 }
 .swiper-slide img {
@@ -373,7 +373,8 @@ img{
 }
 .carrouselBack{
     background-color: #757575;
-    padding: 0px;
+    padding: 80px;
+    
 }
 /* Estilo general para los botones de navegación (next y prev) */
 .swiper-button-next, .swiper-button-prev {
