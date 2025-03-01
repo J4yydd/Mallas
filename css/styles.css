@@ -213,7 +213,7 @@ body {                           /*  las dos primeras opciones de arrba es para 
     background: rgba(0, 0, 0, 0.7);
 }
 .nav-main a.active {
-    background-color: orange; /* Color cuando está seleccionada */
+    background-color: red; /* Color cuando está seleccionada */
     font-weight: bold;
 }
 
