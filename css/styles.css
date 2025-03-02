@@ -453,3 +453,99 @@ img{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* segundo carrousel */
+
+
+
+.sliderContainer {
+    background-color: #757575;
+    padding: 10px;
+}
+
+.swiper {
+    width: 90%;
+    max-width: 1700px;
+    height: 600vh;
+    max-height: 1500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    background-color: #757575;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .swiper {
+        height: 60vh;
+        width: 49vh;
+        max-height: 600px;
+    }
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: white;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 18px;
+    border-radius: 30%;
+    font-size: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.swiper-button-next:hover, .swiper-button-prev:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: scale(1.5);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+}
+
+.swiper-button-next:active, .swiper-button-prev:active {
+    transform: scale(0.95);
+    opacity: 1;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.swiper-button-next {
+    right: 15px;
+}
+
+.swiper-button-prev {
+    left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
