@@ -469,7 +469,7 @@ img{
 
 
 .sliderContainer {
-    background-color: #757575;
+    background-color: var(--gris);
     padding: 10px;
 }
 
@@ -482,7 +482,7 @@ img{
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-    background-color: #757575;
+    background-color: #020101;
 }
 
 .swiper-slide img {
@@ -554,6 +554,14 @@ img{
     margin-bottom: 0; /* esto lo que hace es darle saparacion hacia abajo*/
 }
 
+
+.image-containerNosotros {
+    max-width: 1000rem; /* Ajusta el tamaño máximo del contenedor */
+    margin: 6px auto; /* darle espacio con otras cosas */
+    padding:10px;
+    text-align: center;
+    background-color: var(--oscuro);
+}
 
 
 
