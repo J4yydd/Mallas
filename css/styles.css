@@ -37,7 +37,7 @@ body {                           /*  las dos primeras opciones de arrba es para 
     font-size: 1.9rem;
     color: var(--blanco); /* esta es la manera de poner nuestras variables*/
     font-family: "Krub", serif;/* agregar tipos de letras*/
-    background-color: var(--primario);
+    background-color: rgb(207, 12, 12);
     
     max-width: 1000rem; /* esto es para definir el ancho max que se ucupara*/
     margin-top:0;  /* lo que hace esto es poder dar separacion de margen*/
@@ -89,8 +89,8 @@ body {                           /*  las dos primeras opciones de arrba es para 
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: .5rem;
-    padding: 18px;
+    gap: .10rem;
+    padding: 0px;
 }
 
 .nav-main a {
@@ -260,7 +260,7 @@ body {                           /*  las dos primeras opciones de arrba es para 
     font-size: 1.9rem;
     color: var(--blanco); /* esta es la manera de poner nuestras variables*/
     font-family: "Krub", serif;/* agregar tipos de letras*/
-    background-color: var(--primario);
+    background-color: rgb(207, 12, 12);
     
     max-width: 1000rem; /* esto es para definir el ancho max que se ucupara*/
     margin-top:0;  /* lo que hace esto es poder dar separacion de margen*/
@@ -273,7 +273,7 @@ body {                           /*  las dos primeras opciones de arrba es para 
     font-size: 2rem;
     color: var(--blanco); /* esta es la manera de poner nuestras variables*/
     font-family: "Krub", serif;/* agregar tipos de letras*/
-    background-color: var(--primario);
+    background-color:  rgb(207, 12, 12);
     
     max-width: 1000rem; /* esto es para definir el ancho max que se ucupara*/
     margin-top:0;  /* lo que hace esto es poder dar separacion de margen*/
@@ -588,6 +588,11 @@ img{
     max-width: 1000px;
     min-width: 320px;
     margin: auto;
+
+}
+
+.tituloServicios{
+    background-color: #4c6c70;
 
 }
 
