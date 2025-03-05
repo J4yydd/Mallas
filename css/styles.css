@@ -96,6 +96,7 @@ body {                           /*  las dos primeras opciones de arrba es para 
 
 .nav-main a {
     color: var(--blanco);
+    font-size: 30px;
     text-decoration: none;
     font-weight: 700;
     padding: 2.5rem;
@@ -103,13 +104,13 @@ body {                           /*  las dos primeras opciones de arrba es para 
 }
 
 .nav-main a:hover {
-    background-color: var(--primario);
+    background-color: rgb(207, 12, 12);
     color: var(--blanco);
     transform: scale(1.1);
 }
 
 .nav-main a.active {
-    background-color: var(--primario); /* Cambia el color de fondo cuando está activa */
+    background-color:  rgb(207, 12, 12);; /* Cambia el color de fondo cuando está activa */
    
     transform: scale(1.1); /* Mantiene el efecto de escala */
     font-weight: bold;
@@ -175,7 +176,16 @@ body {                           /*  las dos primeras opciones de arrba es para 
     top: 50%;   /* Ajusta la posición vertical */
     left: 50%;  /* Ajusta la posición horizontal */
     transform: translate(-50%, -50%); /* Centra la imagen */
-    width: 400px; /* Ajusta el tamaño de la imagen superpuesta */
+    width: 500px; /* Ajusta el tamaño de la imagen superpuesta */
+}
+@media (max-width: 600px){
+    
+
+.superpuesta  {
+    
+    width: 300px; /* Ajusta el tamaño de la imagen superpuesta */
+    
+}
 }
 
 
@@ -288,7 +298,7 @@ body {                           /*  las dos primeras opciones de arrba es para 
     font-size: 12px;
     color: var(--blanco); /* esta es la manera de poner nuestras variables*/
     font-family: "Krub", serif;/* agregar tipos de letras*/
-    background-color: var(--primario);
+    background-color: rgb(207, 12, 12);;
     
     max-width: 1000rem; /* esto es para definir el ancho max que se ucupara*/
     margin-top:0;  /* lo que hace esto es poder dar separacion de margen*/
@@ -475,11 +485,11 @@ img{
 }
 
 .swiper {
-    width: 90%;
-    max-width: 1700px;
-    height: 600vh;
+    width: 90vw; /* O un tamaño fijo, por ejemplo, 1200px */
+    max-width: 1600px;
+    height: 320vh; /* Controla la altura */
+    max-height: 1170px; /* Ajusta según necesidad */
     
-    max-height: 1500px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
@@ -499,6 +509,7 @@ img{
         max-height: 600px;
     }
 }
+
 
 .swiper-button-next, .swiper-button-prev {
     color: white;
@@ -547,7 +558,7 @@ img{
     font-size: 2rem;
     color: var(--blanco); /* esta es la manera de poner nuestras variables*/
     font-family: "Krub", serif;/* agregar tipos de letras*/
-    background-color: var(--primario);
+    background-color: rgb(207, 12, 12);;
     
     max-width: 1000rem; /* esto es para definir el ancho max que se ucupara*/
     margin-top:0;  /* lo que hace esto es poder dar separacion de margen*/
@@ -561,7 +572,7 @@ img{
     font-size: 2rem;
     color: var(--blanco); /* esta es la manera de poner nuestras variables*/
     font-family: "Krub", serif;/* agregar tipos de letras*/
-    background-color: var(--primario);
+    background-color:  rgb(207, 12, 12);;
     
     max-width: 1000rem; /* esto es para definir el ancho max que se ucupara*/
     margin-top:0;  /* lo que hace esto es poder dar separacion de margen*/
