@@ -17,7 +17,7 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box;
-    background-color: #757575;
+    background-color: var(--gris);
   
 }
  *:before, *:after{   /* esto es para que no se afecte el padding */
@@ -575,7 +575,7 @@ img{
     font-size: 2rem;
     color: var(--blanco); /* esta es la manera de poner nuestras variables*/
     font-family: "Krub", serif;/* agregar tipos de letras*/
-    background-color:  rgb(207, 12, 12);;
+    background-color:  rgb(207, 12, 12);
     
     max-width: 1000rem; /* esto es para definir el ancho max que se ucupara*/
     margin-top:0;  /* lo que hace esto es poder dar separacion de margen*/
@@ -671,6 +671,20 @@ img{
 }
 
 
+
+.DescripcionContactos{
+    padding: 21px;
+    text-align:center;
+    font-size: 2rem;
+    color:  rgb(207, 12, 12); /* esta es la manera de poner nuestras variables*/
+    font-family: "Krub", serif;/* agregar tipos de letras*/
+    background-color: rgb(255, 255, 255);;
+    
+    max-width: 1000rem; /* esto es para definir el ancho max que se ucupara*/
+    margin-top:0;  /* lo que hace esto es poder dar separacion de margen*/
+    margin-right: auto;/* esto hace qie que sea su posicon automatica y como ambos lados quedan auto, queda centrado*/
+    margin-bottom: 0; /* esto lo que hace es darle saparacion hacia abajo*/
+}
 
 
 

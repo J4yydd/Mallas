@@ -20,16 +20,16 @@
 </head>
 <body>   
 <header>
-    <h1  class  = "titulo">UNA SOLUCION PARA CADA NECESIDAD
+    <h1  class  = "titulo"> Servicios de contacto
     
         </h1>  <!-- este es el renglon mas importante de la pagina, ya que contiene el h1-->
             </header>
         <div class="nav-bg">
             <nav class="nav-main contenedor"> 
                 
-                <a href ="Nosotros.html">Sobre nosotros</a> <!-- esta sintaxis es para poder tener enlaces-->
-                <a href ="Servicios.html">Servicios</a> <!-- esta sintaxis es para poder tener enlaces-->
-                <a href ="Contactos.html">Contáctanos</a> <!-- sesta sintaxis es para poder tener enlaces-->
+                <a href ="index.html">↩ Inicio </a> <!-- esta sintaxis es para poder tener enlaces-->
+            
+                <a href ="Contactos.html">Area de contactos</a> <!-- sesta sintaxis es para poder tener enlaces-->
                 <!-- lo que esta entre comillas es lo que se va a llebar al enlace, 
                  ya sea imagenes o otra pagina con el nombre del archivo en codigo-->
                 
@@ -38,6 +38,11 @@
                 
           
             </nav>
+            <div class="DescripcionContactos">
+                <h2>  --  --   </h3>
+                    <h4>Tu satisfacción es nuestra prioridad, siempre atentos a tus necesidades
+                    </h4>
+            </div>
           
            
          
@@ -45,154 +50,156 @@
            
             <style>
                 body {
-                  font-family: Arial, sans-serif;
-                  margin: 0;
-                  padding: 0;
-                  background-color: #f4f4f4;
+                    font-family: Arial, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #ffffff;
                 }
             
                 #contactos {
-                  background-color: #f7f7f7;
-                  padding: 40px 20px;
-                  text-align: center;
+                    background-color: #ffffff;
+                    padding: 40px 20px;
+                    text-align: center;
                 }
             
                 #contactos h2 {
-                  font-size: 2.5rem;
-                  color: #333;
-                  margin-bottom: 20px;
+                    font-size: 2.5rem;
+                    color: #333;
+                    margin-bottom: 20px;
                 }
             
                 .contact-container {
-                  display: flex;
-                  flex-wrap: wrap;
-                  justify-content: center; /* Centra las tarjetas horizontalmente */
-                  align-items: center; /* Centra las tarjetas verticalmente */
-                  gap: 40px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center; /* Centra las tarjetas horizontalmente */
+                    align-items: center; /* Centra las tarjetas verticalmente */
+                    gap: 40px;
                 }
             
                 .contact-item {
-                  background-color: #fff;
-                  border: 1px solid #ddd;
-                  border-radius: 10px;
-                  padding: 30px;
-                  width: 100%;
-                  max-width: 400px;
-                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                  text-align: center;
-                  cursor: pointer; /* Indica que es interactivo */
-                  transition: transform 0.3s ease-in-out;
+                    background-color: #fff;
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                    padding: 40px;
+                    width: 100%;
+                    max-width: 500px; /* Aumenté el tamaño máximo de las tarjetas */
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                    text-align: center;
+                    cursor: pointer; /* Indica que es interactivo */
+                    transition: transform 0.3s ease-in-out;
                 }
             
                 .contact-item:hover {
-                  transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+                    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
                 }
             
                 .contact-item h3 {
-                  font-size: 1.5rem;
-                  margin-top: 15px;
-                  color: #333;
+                    font-size: 1.8rem; /* Aumenté el tamaño de los títulos */
+                    margin-top: 15px;
+                    color: #333;
                 }
             
                 .contact-item p {
-                  font-size: 1.2rem;
-                  margin-top: 10px;
-                  color: #555;
+                    font-size: 1.2rem;
+                    margin-top: 10px;
+                    color: #555;
                 }
             
                 .contact-item a {
-                  color: #007bff;
-                  text-decoration: none;
-                  font-weight: bold;
+                    color: #007bff;
+                    text-decoration: none;
+                    font-weight: bold;
                 }
             
                 .contact-item i {
-                  font-size: 4rem; /* Aumenté el tamaño de los iconos */
-                  color: #007bff;
+                    font-size: 5rem; /* Aumenté el tamaño de los iconos */
+                    color: #b4265a;
                 }
             
                 .contact-item a:hover {
-                  text-decoration: underline;
+                    text-decoration: underline;
                 }
             
                 .contact-item i:hover {
-                  color: #0056b3;
+                    color: #0056b3;
                 }
             
                 /* Medias Query para dispositivos móviles */
                 @media (max-width: 768px) {
-                  #contactos h2 {
-                    font-size: 2rem;
-                  }
+                    #contactos h2 {
+                        font-size: 2rem;
+                    }
             
-                  .contact-item {
-                    padding: 20px;
-                    max-width: 90%;
-                  }
+                    .contact-item {
+                        padding: 20px;
+                        max-width: 90%;
+                    }
             
-                  .contact-item h3 {
-                    font-size: 1.2rem;
-                  }
+                    .contact-item h3 {
+                        font-size: 1.2rem;
+                    }
             
-                  .contact-item p {
-                    font-size: 1rem;
-                  }
+                    .contact-item p {
+                        font-size: 1rem;
+                    }
                 }
             
                 /* Medias Query para pantallas grandes */
                 @media (min-width: 1200px) {
-                  #contactos h2 {
-                    font-size: 3rem;
-                  }
+                    #contactos h2 {
+                        font-size: 3rem;
+                    }
             
-                  .contact-item {
-                    padding: 40px;
-                    max-width: 500px;
-                  }
+                    .contact-item {
+                        padding: 40px;
+                        max-width: 600px; /* Aumenté aún más el tamaño de las tarjetas */
+                    }
             
-                  .contact-item h3 {
-                    font-size: 1.8rem;
-                  }
+                    .contact-item h3 {
+                        font-size: 2rem;
+                    }
             
-                  .contact-item p {
-                    font-size: 1.3rem;
-                  }
+                    .contact-item p {
+                        font-size: 1.3rem;
+                    }
                 }
-              </style>
-            </head>
-            <body>
+            </style>
             
-              <section id="contactos">
-              
+            <section id="contactos">
+            
                 <div class="contact-container">
-                  <div class="contact-item" onclick="window.location.href='mailto:correo@ejemplo.com'">
-                    <i class="fa fa-envelope"></i>
-                    <h3>Correo Electrónico</h3>
-                    <p>Haz clic para enviar un correo</p>
-                  </div>
-                  <div class="contact-item" onclick="window.location.href='https://wa.me/1234567890'">
-                    <i class="fab fa-whatsapp"></i> <!-- Icono de WhatsApp -->
-                    <h3>WhatsApp Oficina</h3>
-                    <p>Haz clic para contactar por WhatsApp</p>
-                  </div>
-                  <div class="contact-item" onclick="window.location.href='https://wa.me/0987654321'">
-                    <i class="fab fa-whatsapp"></i> <!-- Icono de WhatsApp -->
-                    <h3>WhatsApp Ventas</h3>
-                    <p>Haz clic para contactar por WhatsApp</p>
-                  </div>
-                  <div class="contact-item" onclick="window.location.href='tel:+1234567890'">
-                    <i class="fa fa-phone"></i>
-                    <h3>Teléfono Oficina</h3>
-                    <p>Haz clic para llamar</p>
-                  </div>
-                  <!-- Nueva tarjeta para Google Maps -->
-                  <div class="contact-item" onclick="window.location.href='https://www.google.com/maps/place/Tu+Ubicación+Específica'">
-                    <i class="fa fa-map-marker-alt"></i>
-                    <h3>Ubicación en Google Maps</h3>
-                    <p>Haz clic para ver nuestra ubicación</p>
-                  </div>
+                    <div class="contact-item" onclick="window.location.href='mailto:correo@ejemplo.com'">
+                        <i class="fa fa-envelope"></i>
+                        <h3>Correo Electrónico</h3>
+                        <p>Haz clic para enviarnos un correo</p>
+                    </div>
+                    <div class="contact-item" onclick="window.location.href='https://wa.me/524941064524 '">
+                        <i class="fab fa-whatsapp"></i> <!-- Icono de WhatsApp -->
+                        <h3>WhatsApp Oficina</h3>
+                        <p>Haz clic para contactarnos por WhatsApp</p>
+                    </div>
+                    <div class="contact-item" onclick="window.location.href='https://wa.me/524949490363 '">
+                        <i class="fab fa-whatsapp"></i> <!-- Icono de WhatsApp -->
+                        <h3>WhatsApp Ventas</h3>
+                        <p>Haz clic para contactarnos por WhatsApp</p>
+                    </div>
+                    <div class="contact-item" onclick="window.location.href='tel:+524949452100 '">
+                        <i class="fa fa-phone"></i>
+                        <h3>Teléfono Oficina</h3>
+                        <p>Haz clic para llamarnos</p>
+                    </div>
+                    <!-- Nueva tarjeta para Google Maps -->
+                    <div class="contact-item" onclick="window.location.href='https://www.google.com/maps/place/MALLAS+JEREZ/@22.6438731,-102.9792818,17z/data=!3m1!4b1!4m6!3m5!1s0x8682e55105460b07:0xa5d8821ecfa4228d!8m2!3d22.6438731!4d-102.9767069!16s%2Fg%2F1tcv1wn6?entry=ttu&g_ep=EgoyMDI1MDMwMi4wIKXMDSoASAFQAw%3D%3D'">
+                        <i class="fa fa-map-marker-alt"></i>
+                        <h3>Ubicación en Google Maps</h3>
+                        <p>Haz clic para ver nuestra ubicación</p>
+                    </div>
                 </div>
-              </section>
+            </section>
+        </div>
+      
+        </div>
+            
             
             </body>
 </html>
