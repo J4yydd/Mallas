@@ -28,6 +28,7 @@ body {                           /*  las dos primeras opciones de arrba es para 
     y que el codigo se adapte mejor a cualquier ordenador*/
     font-size: 16px;
     font-family: "Krub", serif;/*si lo colocamos en el body ira en todos los elementos*/
+    
   
    
    
@@ -196,8 +197,9 @@ body {                           /*  las dos primeras opciones de arrba es para 
     display: flex;
   justify-content: center;   /* se puede usar para centrar items o lo q sea  */
   align-items: center;
+  
+  
 
-   
     
 }
 .servicios{
@@ -631,7 +633,7 @@ img{
 
 .contact-card a {
     text-decoration: none;
-    color: peru;
+    color: beige;
     font-weight: bold;
     
 }
@@ -667,6 +669,26 @@ img{
     text-decoration: none;
     color: black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

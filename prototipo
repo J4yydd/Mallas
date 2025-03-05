@@ -552,3 +552,28 @@ body {                           /*  las dos primeras opciones de arrba es para 
 <div class="image-container">
     <img src="./img/pruebaa.jpg" alt="Imagen adaptable">
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="mapa">
+        
+    <p class="mapa">
+        <a href="https://www.google.com/maps?q=18.5204,73.8567" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke=" rgb(207, 12, 12)" stroke-linecap="round" stroke-linejoin="round" width="50" height="50" stroke-width="2">
+              <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+              <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
+            </svg>
+          </a>
+    </p>
+      
+    </div>

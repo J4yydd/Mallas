@@ -8,6 +8,7 @@
     <title>Mallas Jerez</title> <!-- es el nombre que tendra tu pagina web-->
     <link rel ="preloaad" href="css/normalize.css" as ="style">
     <link rel = "stylesheet" href ="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
@@ -17,6 +18,7 @@
     para el css, y lo que es el reel stylesheet es para ya indicarle la conexion con los estilos-->
 
 </head>
+<body>   
 <header>
     <h1  class  = "titulo">UNA SOLUCION PARA CADA NECESIDAD
     
@@ -36,77 +38,161 @@
                 
           
             </nav>
-        </div>
-<body>
-   
-    <div class="contact-cards-container">
-        <div class="contact-card">
-            <p><strong>Correo:</strong></p>
-            <a href="mailto:mallasjerez@hotmail.com">contacto@tuempresa.com</a>
-        </div>
-        <div class="contact-card">
-            <p><strong>WhatsApp Oficina:</strong></p>
-            <a href="https://wa.me/4941064524">Enviar mensaje</a>
-        </div>
-        <div class="contact-card">
-            <p><strong>WhatsApp Ventas:</strong></p>
-            <a href="https://wa.me/0987654321">Enviar mensaje</a>
-        </div>
-        <div class="contact-card">
-            <p><strong>Teléfono:</strong></p>
-            <a href="tel:+4941125352">Llamar a la oficina</a>
-        </div>
-    </div>
-    
-    <!-- Botón flotante de WhatsApp -->
-    <div class="whatsapp-btn" onclick="toggleMenu()">💬</div>
-    <div class="whatsapp-menu" id="whatsappMenu">
-        <a href="https://wa.me/1234567890">WhatsApp Oficina</a>
-        <a href="https://wa.me/0987654321">WhatsApp Ventas</a>
-    </div>
-    
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("whatsappMenu");
-            menu.style.display = menu.style.display === "block" ? "none" : "block";
-        }
-    </script>
-    <section class="hero">
-        <div class="contenido-hero">
-            <img src="./img/logoMain.jpg" alt="Imagen superpuesta" class="superpuesta">
+          
            
-            
-            
-        
-        <h2 class="subtitulo">MALLAS JEREZ</h2>
-        <div class="mapa">
-            
-        <p class="mapa">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="orange" stroke-linecap="round" stroke-linejoin="round" width="50" height="50" stroke-width="2">
-              <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
-              <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>  <!-- simplemente etiquetas para iconos, debemos recordar que 
-              necesitamos de agregarlos en un parrafo, para no tener desorden-->
-            </svg>
-        </p>
+         
           
-        </div>
-        </div>
-        </div>
-        <h1></h1>
-          
-    
-    
-    
-    
-    </section>
-    </div>
-    
-    
-     <footer> 
-        <p>Web Developer: Victor Colón</p>
-     </footer>
-     <script src="nevegacionEstatica.js" defer></script>
-    
-    
-</body>
+           
+            <style>
+                body {
+                  font-family: Arial, sans-serif;
+                  margin: 0;
+                  padding: 0;
+                  background-color: #f4f4f4;
+                }
+            
+                #contactos {
+                  background-color: #f7f7f7;
+                  padding: 40px 20px;
+                  text-align: center;
+                }
+            
+                #contactos h2 {
+                  font-size: 2.5rem;
+                  color: #333;
+                  margin-bottom: 20px;
+                }
+            
+                .contact-container {
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center; /* Centra las tarjetas horizontalmente */
+                  align-items: center; /* Centra las tarjetas verticalmente */
+                  gap: 40px;
+                }
+            
+                .contact-item {
+                  background-color: #fff;
+                  border: 1px solid #ddd;
+                  border-radius: 10px;
+                  padding: 30px;
+                  width: 100%;
+                  max-width: 400px;
+                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                  text-align: center;
+                  cursor: pointer; /* Indica que es interactivo */
+                  transition: transform 0.3s ease-in-out;
+                }
+            
+                .contact-item:hover {
+                  transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+                }
+            
+                .contact-item h3 {
+                  font-size: 1.5rem;
+                  margin-top: 15px;
+                  color: #333;
+                }
+            
+                .contact-item p {
+                  font-size: 1.2rem;
+                  margin-top: 10px;
+                  color: #555;
+                }
+            
+                .contact-item a {
+                  color: #007bff;
+                  text-decoration: none;
+                  font-weight: bold;
+                }
+            
+                .contact-item i {
+                  font-size: 4rem; /* Aumenté el tamaño de los iconos */
+                  color: #007bff;
+                }
+            
+                .contact-item a:hover {
+                  text-decoration: underline;
+                }
+            
+                .contact-item i:hover {
+                  color: #0056b3;
+                }
+            
+                /* Medias Query para dispositivos móviles */
+                @media (max-width: 768px) {
+                  #contactos h2 {
+                    font-size: 2rem;
+                  }
+            
+                  .contact-item {
+                    padding: 20px;
+                    max-width: 90%;
+                  }
+            
+                  .contact-item h3 {
+                    font-size: 1.2rem;
+                  }
+            
+                  .contact-item p {
+                    font-size: 1rem;
+                  }
+                }
+            
+                /* Medias Query para pantallas grandes */
+                @media (min-width: 1200px) {
+                  #contactos h2 {
+                    font-size: 3rem;
+                  }
+            
+                  .contact-item {
+                    padding: 40px;
+                    max-width: 500px;
+                  }
+            
+                  .contact-item h3 {
+                    font-size: 1.8rem;
+                  }
+            
+                  .contact-item p {
+                    font-size: 1.3rem;
+                  }
+                }
+              </style>
+            </head>
+            <body>
+            
+              <section id="contactos">
+              
+                <div class="contact-container">
+                  <div class="contact-item" onclick="window.location.href='mailto:correo@ejemplo.com'">
+                    <i class="fa fa-envelope"></i>
+                    <h3>Correo Electrónico</h3>
+                    <p>Haz clic para enviar un correo</p>
+                  </div>
+                  <div class="contact-item" onclick="window.location.href='https://wa.me/1234567890'">
+                    <i class="fab fa-whatsapp"></i> <!-- Icono de WhatsApp -->
+                    <h3>WhatsApp Oficina</h3>
+                    <p>Haz clic para contactar por WhatsApp</p>
+                  </div>
+                  <div class="contact-item" onclick="window.location.href='https://wa.me/0987654321'">
+                    <i class="fab fa-whatsapp"></i> <!-- Icono de WhatsApp -->
+                    <h3>WhatsApp Ventas</h3>
+                    <p>Haz clic para contactar por WhatsApp</p>
+                  </div>
+                  <div class="contact-item" onclick="window.location.href='tel:+1234567890'">
+                    <i class="fa fa-phone"></i>
+                    <h3>Teléfono Oficina</h3>
+                    <p>Haz clic para llamar</p>
+                  </div>
+                  <!-- Nueva tarjeta para Google Maps -->
+                  <div class="contact-item" onclick="window.location.href='https://www.google.com/maps/place/Tu+Ubicación+Específica'">
+                    <i class="fa fa-map-marker-alt"></i>
+                    <h3>Ubicación en Google Maps</h3>
+                    <p>Haz clic para ver nuestra ubicación</p>
+                  </div>
+                </div>
+              </section>
+            
+            </body>
 </html>
