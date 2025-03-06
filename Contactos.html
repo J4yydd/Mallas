@@ -29,7 +29,7 @@
                 
                 <a href ="index.html">↩ </a> <!-- esta sintaxis es para poder tener enlaces-->
             
-                <a href ="Contactos.html">Area de contactos</a> <!-- sesta sintaxis es para poder tener enlaces-->
+                <a href ="Contactos.html">Área de contactos</a> <!-- sesta sintaxis es para poder tener enlaces-->
                 <!-- lo que esta entre comillas es lo que se va a llebar al enlace, 
                  ya sea imagenes o otra pagina con el nombre del archivo en codigo-->
                 
@@ -54,6 +54,11 @@
                     margin: 0;
                     padding: 0;
                     background-color: #ffffff;
+                    width: 100%;
+                    overflow-x: hidden;
+                    height: 100%;
+   
+                
                 }
             
                 #contactos {
@@ -168,10 +173,10 @@
             <section id="contactos">
             
                 <div class="contact-container">
-                    <div class="contact-item" onclick="window.location.href='mailto:correo@ejemplo.com'">
-                        <i class="fa fa-envelope"></i>
-                        <h3>Correo Electrónico</h3>
-                        <p>Haz clic para enviarnos un correo</p>
+                    <div class="contact-item" onclick="window.location.href='https://www.google.com/maps/place/MALLAS+JEREZ/@22.6438731,-102.9792818,17z/data=!3m1!4b1!4m6!3m5!1s0x8682e55105460b07:0xa5d8821ecfa4228d!8m2!3d22.6438731!4d-102.9767069!16s%2Fg%2F1tcv1wn6?entry=ttu&g_ep=EgoyMDI1MDMwMi4wIKXMDSoASAFQAw%3D%3D'">
+                        <i class="fa fa-map-marker-alt"></i>
+                        <h3>Ubicación en Google Maps</h3>
+                        <p>Haz clic para ver nuestra ubicación</p>
                     </div>
                     <div class="contact-item" onclick="window.location.href='https://wa.me/524941064524 '">
                         <i class="fab fa-whatsapp"></i> <!-- Icono de WhatsApp -->
@@ -188,11 +193,12 @@
                         <h3>Teléfono Oficina</h3>
                         <p>Haz clic para llamarnos</p>
                     </div>
+                    <div class="contact-item" onclick="window.location.href='mailto:correo@ejemplo.com'">
+                        <i class="fa fa-envelope"></i>
+                        <h3>Correo Electrónico</h3>
+                        <p>Haz clic para enviarnos un correo</p>
                     <!-- Nueva tarjeta para Google Maps -->
-                    <div class="contact-item" onclick="window.location.href='https://www.google.com/maps/place/MALLAS+JEREZ/@22.6438731,-102.9792818,17z/data=!3m1!4b1!4m6!3m5!1s0x8682e55105460b07:0xa5d8821ecfa4228d!8m2!3d22.6438731!4d-102.9767069!16s%2Fg%2F1tcv1wn6?entry=ttu&g_ep=EgoyMDI1MDMwMi4wIKXMDSoASAFQAw%3D%3D'">
-                        <i class="fa fa-map-marker-alt"></i>
-                        <h3>Ubicación en Google Maps</h3>
-                        <p>Haz clic para ver nuestra ubicación</p>
+                  
                     </div>
                 </div>
             </section>
