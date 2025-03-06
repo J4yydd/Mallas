@@ -693,10 +693,74 @@ img{
 
 
 
+/* segunda nav */
 
 
+.navv-main {
+    color: var(--blanco); /* Define el color del texto usando una variable CSS */
+    display: flex; /* Usa flexbox para distribuir los elementos */
+    flex-direction: row; /* Alinea los elementos en una columna */
+    justify-content: space-between; /* Distribuye los elementos uniformemente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    gap: .10rem; /* Espaciado mínimo entre elementos */
+    padding: 0px; /* Elimina el relleno interno */
+}
 
+/* Estilos para los enlaces dentro de la barra de navegación */
+.navv-main a {
+    color: var(--blanco); /* Define el color del texto */
+    font-size: 39px; /* Tamaño de fuente */
+    justify-content: center; /* Centra el contenido */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    font-weight: 700; /* Aplica un grosor de fuente fuerte */
+    padding: 2.6rem; /* Espaciado interno para mejorar la accesibilidad */
+    transition: background-color 0.3s, transform 0.3s ease; /* Agrega una transición de color y escala */
+}
 
+/* Efecto cuando el usuario pasa el cursor sobre los enlaces */
+.navv-main a:hover {
+    background-color: red; /* Cambia el color de fondo en hover */
+    color: var(--blanco); /* Mantiene el color del texto */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+/* Estilo para el enlace activo en la barra de navegación */
+.navv-main a.active {
+    background-color: red; /* Color de fondo cuando está activo */
+    transform: scale(1.1); /* Mantiene el efecto de escala */
+    font-weight: bold; /* Hace que el texto sea más grueso */
+}
+
+/* Contenedor principal con un ancho máximo y centrado */
+.contenedorr {
+    max-width: 140rem; /* Define un ancho máximo */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+/* Estilo para el fondo de la barra de navegación */
+.navv-bg {
+    background-color: rgb(207, 12, 12); /* Color de fondo rojo */
+}
+
+/* Media queries para mejorar la respuesta en diferentes tamaños de pantalla */
+@media(min-width: 480px) {
+    body {
+        background-color: var(--blanco); /* Cambia el color de fondo del cuerpo */
+    }
+}
+
+@media (min-width: 480px) {
+    h1 {
+        /* Espacio reservado para futuras modificaciones en los títulos */
+    } 
+}
+
+@media (min-width: 748px) { 
+    .navv-main {
+        flex-direction: row; /* Cambia la dirección a fila en pantallas más grandes */
+        justify-content: space-between; /* Distribuye los elementos de manera uniforme */
+    }
+}
 
 
 
