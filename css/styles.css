@@ -85,12 +85,11 @@ body {                           /*  las dos primeras opciones de arrba es para 
 .subtitulo{   /* no es recomendado usar id */ 
     text-align:center;
     font-size: 6rem;
-    padding: 50px;
+    padding: 40px;
     color: var(--blanco); /* esta es la manera de poner nuestras variables*/
     font-family: "Krub", serif;/* agregar tipos de letras*/
     position: absolute;  /* También puede ser relative, fixed o sticky */
-    top: 560px;
-    left: 492px;
+  
     
   
 }
