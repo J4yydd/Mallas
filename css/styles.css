@@ -803,9 +803,9 @@ img{
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     .texto {
-        font-size:24px; /* Reduce más en teléfonos */
+        font-size:20px; /* Reduce más en teléfonos */
         top: 68%;
         left: 49.9%;
         
@@ -889,9 +889,6 @@ img{
         font-size:30px; /* Tamaño de fuente */
     }
 }
-
-
-
 
 
 
