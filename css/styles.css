@@ -193,7 +193,7 @@ body {                           /*  las dos primeras opciones de arrba es para 
 }
 .superpuesta {
     position: absolute;
-    top: 50%;   /* Ajusta la posición vertical */
+    top: 31%;   /* Ajusta la posición vertical */
     left: 50%;  /* Ajusta la posición horizontal */
     transform: translate(-50%, -50%); /* Centra la imagen */
     width: 500px; /* Ajusta el tamaño de la imagen superpuesta */
@@ -786,7 +786,7 @@ img{
 
 .texto {
     position: absolute;
-    top: 81%;
+    top: 61%;
     left: 49.9%;
     transform: translate(-50%, -50%);
     color: white;
@@ -806,7 +806,7 @@ img{
 @media (max-width: 600px) {
     .texto {
         font-size:20px; /* Reduce más en teléfonos */
-        top: 68%;
+        top: 49%;
         left: 49.9%;
         
     }
@@ -894,4 +894,64 @@ img{
 
 
 
+.des {
+    position: inherit;
+    top: 125%;
+    left: 49.9%;
+    transform: translate(-50%, -50%);
+    color: white;
+   
+   
+    font-size: 17px; /* Tamaño por defecto en pantallas grandes */
+    border-radius: 20px;
+    text-align:center;
+    font-size: 1.9rem;
+    color: var(--blanco); /* esta es la manera de poner nuestras variables*/
+    font-family: "Krub", serif;/* agregar tipos de letras*/
+    background-color: rgb(207, 12, 12);
+    
 
+   
+    
+}
+
+.containerrrr {
+    position: relative; /* O absolute, si quieres que se posicione respecto al body */
+    width: 113%;
+    padding: 20px;
+    background-color: #c00;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    top: 77%;
+    left: -6%;
+}
+
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+@media (max-width: 600px) { 
+    .containerrrr  {
+      
+        font-size:30px; /* Tamaño de fuente */
+        position: relative; /* O absolute, si quieres que se posicione respecto al body */
+        width: 185%;
+        padding: 20px;
+        background-color: #c00;
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        top: 77%;
+        left: -42%;
+
+    }
+}
