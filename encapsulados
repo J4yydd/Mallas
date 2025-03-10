@@ -730,3 +730,153 @@ body {                           /*  las dos primeras opciones de arrba es para 
 
 
        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mallas y Accesorios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 10px;
+        }
+        .title {
+            text-align: left;
+            font-size: 24px;
+            font-weight: bold;
+            color: #E2792B;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background: white;
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .card-description {
+            font-size: 14px;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            .grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">MALLAS Y ACCESORIOS</div>
+        <div class="grid">
+            <div class="card">
+                <img src="imagen1.jpg" alt="Ciclónica Galvanizada">
+                <div class="card-content">
+                    <div class="card-title">CICLÓNICA GALVANIZADA</div>
+                    <div class="card-description">Alambre galvanizado tejido de forma helicoidal.</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagen2.jpg" alt="Ciclónica Plastificada">
+                <div class="card-content">
+                    <div class="card-title">CICLÓNICA PLASTIFICADA</div>
+                    <div class="card-description">Alambre galvanizado tejido de forma helicoidal recubierto de polímeros.</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagen3.jpg" alt="Ciclónica Abertura Especial">
+                <div class="card-content">
+                    <div class="card-title">CICLÓNICA ABERTURA ESPECIAL</div>
+                    <div class="card-description">Galvanizado o plastificado en medidas no convencionales para usos más específicos.</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagen4.jpg" alt="Ciclónica Antideslumbrante">
+                <div class="card-content">
+                    <div class="card-title">CICLÓNICA ANTIDESLUMBRANTE</div>
+                    <div class="card-description">Recubierto de polímero negro utilizado como barrera central en autopistas.</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagen5.jpg" alt="Accesorios">
+                <div class="card-content">
+                    <div class="card-title">ACCESORIOS</div>
+                    <div class="card-description">Línea completa para la instalación de cercados perimetrales y de seguridad.</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="imagen6.jpg" alt="Graduada">
+                <div class="card-content">
+                    <div class="card-title">GRADUADA</div>
+                    <div class="card-description">Conocida también como Borreguera; los alambres están dispuestos en posiciones graduales tanto vertical como horizontalmente.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
