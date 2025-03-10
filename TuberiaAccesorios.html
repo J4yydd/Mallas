@@ -26,7 +26,7 @@
         .container {
             max-width: 1200px;
             margin: auto;
-            padding: 10px;
+            padding:30px;
         }
         .title {
             text-align: left;
@@ -35,11 +35,18 @@
             color: #E2792B;
         }
         .grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
+            display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 90px; /* Aumenta el espacio entre imágenes */
+        justify-content: center;
         }
+        @media (max-width: 768px) {
+        .grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
         .card {
             background: white;
             width: 100%;
@@ -48,12 +55,21 @@
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .card img {
             width: 100%;
             height: auto;
             object-fit: cover;
+            transition: opacity 0.3s ease;
         }
+        .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+    .card:hover img {
+        opacity: 0.8;
+    }
         .card-content {
             padding: 15px;
         }
@@ -82,9 +98,9 @@
     <div class="navv-bg">
         <nav class="navv-main contenedorr"> 
             
-            <a href ="index.html">↩ </a> <!-- esta sintaxis es para poder tener enlaces-->
+            <a href ="Servicios.html">↩ </a> <!-- esta sintaxis es para poder tener enlaces-->
         
-            <a href ="TuberiaAccesorios.html">Área de contactos</a> <!-- sesta sintaxis es para poder tener enlaces-->
+            <a href ="TuberiaAccesorios.html">Mallas y Accesorios</a> <!-- sesta sintaxis es para poder tener enlaces-->
             <!-- lo que esta entre comillas es lo que se va a llebar al enlace, 
              ya sea imagenes o otra pagina con el nombre del archivo en codigo-->
             
@@ -96,7 +112,7 @@
        
       
     <div class="container">
-        <div class="title">MALLAS Y ACCESORIOS</div>
+        
         <div class="grid">
             <div class="card">
                 <img src="./img/Tuberia1.jpg" alt="Ciclónica Galvanizada">
@@ -106,35 +122,35 @@
                 </div>
             </div>
             <div class="card">
-                <img src="imagen2.jpg" alt="Ciclónica Plastificada">
+                <img src="./img/Tuberia2.jpg" alt="Ciclónica Plastificada">
                 <div class="card-content">
                     <div class="card-title">CICLÓNICA PLASTIFICADA</div>
                     <div class="card-description">Alambre galvanizado tejido de forma helicoidal recubierto de polímeros.</div>
                 </div>
             </div>
             <div class="card">
-                <img src="imagen3.jpg" alt="Ciclónica Abertura Especial">
+                <img src="./img/Tuberia3.jpg" alt="Ciclónica Abertura Especial">
                 <div class="card-content">
                     <div class="card-title">CICLÓNICA ABERTURA ESPECIAL</div>
                     <div class="card-description">Galvanizado o plastificado en medidas no convencionales para usos más específicos.</div>
                 </div>
             </div>
             <div class="card">
-                <img src="imagen4.jpg" alt="Ciclónica Antideslumbrante">
+                <img src="./img/Tuberia5.jpg" alt="Ciclónica Antideslumbrante">
                 <div class="card-content">
                     <div class="card-title">CICLÓNICA ANTIDESLUMBRANTE</div>
                     <div class="card-description">Recubierto de polímero negro utilizado como barrera central en autopistas.</div>
                 </div>
             </div>
             <div class="card">
-                <img src="imagen5.jpg" alt="Accesorios">
+                <img src="./img/Tuberia6.jpg" alt="Accesorios">
                 <div class="card-content">
                     <div class="card-title">ACCESORIOS</div>
                     <div class="card-description">Línea completa para la instalación de cercados perimetrales y de seguridad.</div>
                 </div>
             </div>
             <div class="card">
-                <img src="imagen6.jpg" alt="Graduada">
+                <img src="./img/Tuberia7.jpg" alt="Graduada">
                 <div class="card-content">
                     <div class="card-title">GRADUADA</div>
                     <div class="card-description">Conocida también como Borreguera; los alambres están dispuestos en posiciones graduales tanto vertical como horizontalmente.</div>
