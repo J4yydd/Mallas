@@ -21,7 +21,7 @@
 
 
 <header>
-    <h1 class  = "tituloServicios"> GaleriaBorregueras</h1>
+    <h1 class  = "tituloServicios">Trabajos De Cercos
        </h1>  <!-- este es el renglon mas importante de la pagina, ya que contiene el h1-->
            </header>
            
@@ -29,9 +29,12 @@
             <nav class="nav-main contenedor"> 
                 <a href ="index.html">↩ Inicio </a> <!-- esta sintaxis es para poder tener enlaces-->
              <!-- esta sintaxis es para poder tener enlaces-->
+             <a href ="GaleriaBorregueras.html">Nuestros Trabajos</a> <!-- sesta sintaxis es para poder tener enlaces-->
                 <a href ="Servicios.html">Otros Servicios</a> <!-- esta sintaxis es para poder tener enlaces-->
-                <a href ="GaleriaBorregueras.html">Galeria de Mallas Borregueras</a>
-                <a href="MallasBorregueras.html">Volver     ↩</a> <!-- sesta sintaxis es para poder tener enlaces-->
+                
+              
+              
+               
                 <!-- lo que esta entre comillas es lo que se va a llebar al enlace, 
                  ya sea imagenes o otra pagina con el nombre del archivo en codigo-->
                 
@@ -42,6 +45,30 @@
             </nav>
        
              </div>
+             <div class="DescripcionNosotros2">
+                <h2>  -- Nuestra Misión --   </h3>
+                    <h4>Satisfacer las necesidades de nuestros clientes en cuanto a protección y delimitación de áreas, ofreciendo productos 
+                        y servicios de alta calidad a un bajo costo.
+                    </h4>
+            </div>
+            
+
+            
+             <div class="image-containerr">
+                <img src="./img/Nosotros1.jpg"  alt="Imagen adaptable">
+                
+                
+             
+            </div>
+            <div class="DescripcionNosotros3">
+                <h2>  -- Nuestros Valores --   </h3>
+                    <h4>• Calidad • Servicio • Responsabilidad • Honestidad • Respeto • Innovación •</h4>
+                   
+                   
+            </div>
+
+
+        
          
 
 
@@ -54,26 +81,32 @@
 
 
 </div>
-<div class="sliderContainer">
-    <div class="swiper customSwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="./img/borreguera1.jpg" alt="Imagen 1"></div>
-            <div class="swiper-slide"><img src="./img/borreguera2.jpg" alt="Imagen 2"></div>
-            <div class="swiper-slide"><img src="./img/borreguera3.jpg" alt="Imagen 3"></div>
-            <div class="swiper-slide"><img src="./img/borregueras4.jpg" alt="Imagen 4"></div>
-            <div class="swiper-slide"><img src="./img/borregueras5.jpg" alt="Imagen 5"></div>
-        
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+<div class="carrouselBack">
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      
+   
+        <div class="swiper-slide"><img src="./img/Nosotros2.jpg" alt="Imagen 1"></div>
+        <div class="swiper-slide"><img src="./img/Nosotros3.jpg" alt="Imagen 1"></div>
+        <div class="swiper-slide"><img src="./img/Nosotros4.jpg" alt="Imagen 1"></div>
+        <div class="swiper-slide"><img src="./img/Nosotros5.jpg" alt="Imagen 1"></div>
+     
+       
     </div>
-</div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
 
+ 
+</div>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+
 <script src="nevegacionEstatica.js" defer></script>
 <script>
-    var customSlider = new Swiper(".customSwiper", {
+    var swiper = new Swiper(".mySwiper", {
         loop: true,
         pagination: {
             el: ".swiper-pagination",
