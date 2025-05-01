@@ -30,8 +30,8 @@
              <a href ="index.html">↩ Inicio </a> <!-- esta sintaxis es para poder tener enlaces-->
           <!-- esta sintaxis es para poder tener enlaces-->
              <a href ="Servicios.html">Otros Servicios</a> <!-- esta sintaxis es para poder tener enlaces-->
-             <a href="GaleriaBorregueras.html">Nuestros Trabajos</a>
-             <a href ="MallasBorregueras.html">Información</a> <!-- sesta sintaxis es para poder tener enlaces-->
+         
+             <!-- sesta sintaxis es para poder tener enlaces-->
             
              <!-- lo que esta entre comillas es lo que se va a llebar al enlace, 
               ya sea imagenes o otra pagina con el nombre del archivo en codigo-->
@@ -55,9 +55,12 @@
             <h2>Contamos con 3 tipos de postes ganaderos, los cuales sirven para construir cercas
                 destinadas y establecer un perimetro determinado gracias a estos.
         </div>
+    
        
             <div class="separador2">
-                <h5>Postes de concreto</h5>
+                <h5>Poste de concreto</h5>
+            </div>
+         
 
 
         
@@ -68,7 +71,7 @@
               
 
 
-</div>
+
 <div class="carrouselBack">
 <div class="swiper mySwiper">
     <div class="swiper-wrapper">
@@ -106,13 +109,14 @@
     });
 </script>
 
-<div class="separador">
+
+<div class="separador3">
     <h5></h5>
 </div>
 <div class="separador2">
-    <h5>Postes de concreto</h5>
+    <h5>Poste de Madera</h5>
 </div>
-<div class="separador">
+<div class="separador3">
     <h5></h5>
 </div>
 <div class="carrouselBack">
@@ -151,6 +155,51 @@
             },
         });
     </script>
+    <div class="separador3">
+        <h5></h5>
+    </div>
+    <div class="separador2">
+        <h5>Poste T</h5>
+    </div>
+    <div class="separador3">
+        <h5></h5>
+    </div>
+    <div class="carrouselBack">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              
+           
+                <div class="swiper-slide"><img src="./img/PosteC1.jpg" alt="Imagen 1"></div>
+                <div class="swiper-slide"><img src="./img/PosteC2.jpg" alt="Imagen 1"></div>
+                <div class="swiper-slide"><img src="./img/PosteC3.jpg" alt="Imagen 1"></div>
+                <div class="swiper-slide"><img src="./img/POsteC4.jpg" alt="Imagen 1"></div>
+           
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        
+         
+        </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+        
+        
+        <script src="nevegacionEstatica.js" defer></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
 
 
 

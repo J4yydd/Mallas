@@ -856,8 +856,18 @@ img{
 
 /* Contenedor principal con un ancho máximo y centrado */
 .contenedorrr {
-    max-width: 140rem; /* Define un ancho máximo */
+    max-width: 340rem; /* Define un ancho máximo */
     margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 70px;
+}
+@media (max-width: 600px) { 
+.contenedorrr {
+
+    padding: 1px;
+    
+    max-width: 10rem; /* Define un ancho máximo */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
 }
 
 /* Estilo para el fondo de la barra de navegación */
@@ -1024,7 +1034,7 @@ p {
     margin-bottom: 0; /* esto lo que hace es darle saparacion hacia abajo*/
 }
 .separador2{
-    padding: 10px;
+    padding: 25px;
     text-align:center;
     font-size: 4.9rem;
     color: var(--blanco); /* esta es la manera de poner nuestras variables*/
@@ -1065,4 +1075,18 @@ p {
     margin-bottom: 0; /* esto lo que hace es darle saparacion hacia abajo*/
 
     }
+}
+.separador3{
+    padding: 10px;
+    text-align:center;
+    font-size: 4.9rem;
+    color: var(--blanco); /* esta es la manera de poner nuestras variables*/
+    font-family: "Krub", serif;/* agregar tipos de letras*/
+    background-color: var(--gris);
+    
+    max-width: 1000rem; /* esto es para definir el ancho max que se ucupara*/
+    margin-top:0;  /* lo que hace esto es poder dar separacion de margen*/
+    margin-right: auto;/* esto hace qie que sea su posicon automatica y como ambos lados quedan auto, queda centrado*/
+    margin-bottom: 0; /* esto lo que hace es darle saparacion hacia abajo*/
+
 }
