@@ -807,6 +807,8 @@ img{
 
 @media (max-width: 600px) {
     .texto {
+         top: 49%;
+        left: 49.9%;
         font-size:20px; /* Reduce más en teléfonos */
         top: 92%;
         
@@ -935,7 +937,7 @@ img{
 
 .containerrrr {
     position: relative; /* O absolute, si quieres que se posicione respecto al body */
-    width: 106%;
+    width: 116%;
     padding: 20px;
     background-color: #c00;
     color: white;
