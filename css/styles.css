@@ -787,40 +787,45 @@ img{
 
 
 .texto {
-    position: absolute;
-    top: 61%;
-    left: 49.9%;
-    transform: translate(-50%, -50%);
-    color: white;
-   
-    font-size: 56px; /* Tamaño por defecto en pantallas grandes */
-    border-radius: 20px;
-    
+  position: absolute;
+  top: 61%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: clamp(20px, 5vw, 56px); /* Escalable entre 20px y 56px */
+  border-radius: 20px;
 }
 
-/* Ajuste para pantallas más pequeñas */
+/* Ajuste para tablets */
 @media (max-width: 768px) {
-    .texto {
-        font-size: 32px; /* Reduce el tamaño en tablets */
-    }
+  .texto {
+    top: 70%; /* puedes ajustar la posición también */
+  }
 }
 
+/* Ajuste para móviles */
 @media (max-width: 600px) {
-    .texto {
-         top: 49%;
-        left: 49.9%;
-        font-size:20px; /* Reduce más en teléfonos */
-        top: 92%;
-        
-        
-    }
+  .texto {
+    top: 90%;
+  }
 }
+
+/* Pantallas muy grandes */
+@media (min-width: 1920px) {
+  .texto {
+    font-size: 72px;
+    top: 55%;
+  }
+}
+/* Pantallas muy grandes */
 @media (min-width: 3000px) {
-    .texto {
-        font-size: 100px; /* Reduce el tamaño en tablets */
-        top:42%;   
-    }
+  .texto {
+    font-size: 72px;
+    top: 40%;
+  }
 }
+
+
 
 
 
