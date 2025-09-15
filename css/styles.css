@@ -4,7 +4,7 @@
     --primario: #ff0707;
     --secundario: #0097A7;
     --gris: #757575;
-
+texto
 
 }
 * {
@@ -808,9 +808,15 @@ img{
 @media (max-width: 600px) {
     .texto {
         font-size:20px; /* Reduce más en teléfonos */
-        top: 49%;
-        left: 49.9%;
+        top: 92%;
         
+        
+    }
+}
+@media (min-width: 3000px) {
+    .texto {
+        font-size: 100px; /* Reduce el tamaño en tablets */
+        top:42%;   
     }
 }
 
