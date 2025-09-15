@@ -4,7 +4,7 @@
     --primario: #ff0707;
     --secundario: #0097A7;
     --gris: #757575;
-texto
+containerrrr
 
 }
 * {
@@ -935,7 +935,7 @@ img{
 
 .containerrrr {
     position: relative; /* O absolute, si quieres que se posicione respecto al body */
-    width: 113%;
+    width: 106%;
     padding: 20px;
     background-color: #c00;
     color: white;
